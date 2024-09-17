@@ -1,0 +1,426 @@
+2024/09/12 13:15:13 main.go:15: test
+2024/09/12 13:16:04 main.go:15: test
+2024/09/12 14:28:41 main.go:16: test
+2024/09/12 16:14:44 users.go:33: table users has no column named pass_word
+2024/09/12 17:21:53 users.go:54: not enough args to execute query: want 4 got 3
+2024/09/13 09:27:02 todos.go:21: table todos has no column named create_at
+2024/09/13 14:23:33 server.go:3413: http: panic serving [::1]:61978: template: layout.html:18: unexpected {{end}}
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc000016120?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc000198000}, {0x36afaa0, 0x3723470}, {0xc0000e1ab8?, 0xc0000dc200?, 0xc0000e1aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc000198000?}, 0xc0000e1b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc000198000?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc000198000}, 0xc000186000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x3727448?, 0xc000198000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000116000, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:34 server.go:3413: http: panic serving [::1]:61979: template: layout.html:18: unexpected {{end}}
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc0000161f0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc0001981c0}, {0x36afaa0, 0x3723470}, {0xc000060ab8?, 0xc0000dc280?, 0xc000060aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc0001981c0?}, 0xc000060b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc0001981c0?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc0001981c0}, 0xc0000d06c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a13b0?}, {0x3727448?, 0xc0001981c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000116090, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:34 server.go:3413: http: panic serving [::1]:61980: template: layout.html:18: unexpected {{end}}
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc0000162c0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc000198380}, {0x36afaa0, 0x3723470}, {0xc000212ab8?, 0xc000204000?, 0xc000212aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc000198380?}, 0xc000212b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc000198380?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc000198380}, 0xc000220000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206090?}, {0x3727448?, 0xc000198380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a000, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:34 server.go:3413: http: panic serving [::1]:61981: template: layout.html:18: unexpected {{end}}
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc0000163a0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc000198540}, {0x36afaa0, 0x3723470}, {0xc000212ab8?, 0xc00019c280?, 0xc000212aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc000198540?}, 0xc000212b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc000198540?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc000198540}, 0xc0001866c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007ed20?}, {0x3727448?, 0xc000198540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188360, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:35 server.go:3413: http: panic serving [::1]:61982: template: layout.html:18: unexpected {{end}}
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc000016480?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc000198700}, {0x36afaa0, 0x3723470}, {0xc000212ab8?, 0xc00019c300?, 0xc000212aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc000198700?}, 0xc000212b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc000198700?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc000198700}, 0xc000186900)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007f1a0?}, {0x3727448?, 0xc000198700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188510, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:40 server.go:3413: http: panic serving [::1]:61983: template: layout.html:18: unexpected {{end}}
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc00029a0b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc00029e000}, {0x36afaa0, 0x3723470}, {0xc000212ab8?, 0xc000204080?, 0xc000212aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc00029e000?}, 0xc000212b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc00029e000?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc00029e000}, 0xc000186b40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007f5c0?}, {0x3727448?, 0xc00029e000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a090, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:40 server.go:3413: http: panic serving [::1]:61984: template: layout.html:18: unexpected {{end}}
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc000016560?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc0001988c0}, {0x36afaa0, 0x3723470}, {0xc000213ab8?, 0xc000204100?, 0xc000213aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc0001988c0?}, 0xc000213b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc0001988c0?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc0001988c0}, 0xc000220120)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002061b0?}, {0x3727448?, 0xc0001988c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a120, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:23:40 server.go:3413: http: panic serving [::1]:61985: template: layout.html:18: unexpected {{end}}
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc000016640?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc000198a80}, {0x36afaa0, 0x3723470}, {0xc000213ab8?, 0xc00019c380?, 0xc000213aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc000198a80?}, 0xc000213b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc000198a80?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc000198a80}, 0xc000186d80)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007fa40?}, {0x3727448?, 0xc000198a80?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001887e0, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/13 14:24:10 server.go:3413: http: panic serving [::1]:61988: template: layout.html:18: unexpected {{end}}
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x36c48a0?, 0xc000016720?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x3727448, 0xc000198c40}, {0x36afaa0, 0x3723470}, {0xc000213ab8?, 0xc000204180?, 0xc000213aa0?})
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:15 +0x23a
+todo_app/app/controllers.top({0x3727448?, 0xc000198c40?}, 0xc000213b30?)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x397a2a0?, {0x3727448?, 0xc000198c40?}, 0x3565dfa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x3329bd9?, {0x3727448, 0xc000198c40}, 0xc000186fc0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007fe60?}, {0x3727448?, 0xc000198c40?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020a1b0, {0x3727ae8, 0xc0000a1260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:05 server.go:3413: http: panic serving [::1]:63183: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc00013bb08?, 0x10451dd5b?}, 0xc000182c60)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0001a08c0}, 0xc000182c60)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0001a08c0?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0001a08c0}, 0xc000182c60)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00010b530?}, {0x104aeef60?, 0xc0001a08c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e090, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:05 server.go:3413: http: panic serving [::1]:63201: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc000060b08?, 0x10451dd5b?}, 0xc000182b40)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0000cd0a0}, 0xc000182b40)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0000cd0a0?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0000cd0a0}, 0xc000182b40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000180690?}, {0x104aeef60?, 0xc0000cd0a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000186b40, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:05 server.go:3413: http: panic serving [::1]:63202: runtime error: invalid memory address or nil pointer dereference
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc000066b08?, 0x10451dd5b?}, 0xc00012b560)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc000176ee0}, 0xc00012b560)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc000176ee0?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc000176ee0}, 0xc00012b560)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00010bc50?}, {0x104aeef60?, 0xc000176ee0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015ed80, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:06 server.go:3413: http: panic serving [::1]:63203: runtime error: invalid memory address or nil pointer dereference
+goroutine 70 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc000066b08?, 0x10451dd5b?}, 0xc00012b680)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0001770a0}, 0xc00012b680)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0001770a0?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0001770a0}, 0xc00012b680)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00010bda0?}, {0x104aeef60?, 0xc0001770a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015ef30, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:11 server.go:3413: http: panic serving [::1]:63204: runtime error: invalid memory address or nil pointer dereference
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc0001e0b08?, 0x10451dd5b?}, 0xc000182d80)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0000cd260}, 0xc000182d80)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0000cd260?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0000cd260}, 0xc000182d80)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001807b0?}, {0x104aeef60?, 0xc0000cd260?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000186c60, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:11 server.go:3413: http: panic serving [::1]:63205: runtime error: invalid memory address or nil pointer dereference
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc0001e0b08?, 0x10451dd5b?}, 0xc0000b57a0)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0000cd420}, 0xc0000b57a0)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0000cd420?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0000cd420}, 0xc0000b57a0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a0e10?}, {0x104aeef60?, 0xc0000cd420?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000298000, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:41 server.go:3413: http: panic serving [::1]:63206: runtime error: invalid memory address or nil pointer dereference
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc0001dcb08?, 0x10451dd5b?}, 0xc0002a6000)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0000cd5e0}, 0xc0002a6000)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0000cd5e0?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0000cd5e0}, 0xc0002a6000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002940f0?}, {0x104aeef60?, 0xc0000cd5e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000298090, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:38:41 server.go:3413: http: panic serving [::1]:63207: runtime error: invalid memory address or nil pointer dereference
+goroutine 72 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x104a8cfe0?, 0x104d232b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc0001dcb08?, 0x10451dd5b?}, 0xc0000b58c0)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x104aeef60, 0xc0000cd7a0}, 0xc0000b58c0)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x104d6d460?, {0x104aeef60?, 0xc0000cd7a0?}, 0x1047b2ada?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x104575a19?, {0x104aeef60, 0xc0000cd7a0}, 0xc0000b58c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a0f90?}, {0x104aeef60?, 0xc0000cd7a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015f0e0, {0x104aef680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:39:23 server.go:3413: http: panic serving [::1]:63212: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x100c50fe0?, 0x100ee72b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc000141b08?, 0x1006e1b7b?}, 0xc00012aa20)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x100cb2f60, 0xc000176620}, 0xc00012aa20)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x100f31460?, {0x100cb2f60?, 0xc000176620?}, 0x1009768fa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100739839?, {0x100cb2f60, 0xc000176620}, 0xc00012aa20)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00010b530?}, {0x100cb2f60?, 0xc000176620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e090, {0x100cb3680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:39:57 server.go:3413: http: panic serving [::1]:63216: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x10147dfe0?, 0x1017142b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc00013bb08?, 0x100f0eb7b?}, 0xc0000ac000)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x1014dff60, 0xc0000c4000}, 0xc0000ac000)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x10175e460?, {0x1014dff60?, 0xc0000c4000?}, 0x1011a38fa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100f66839?, {0x1014dff60, 0xc0000c4000}, 0xc0000ac000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00009e030?}, {0x1014dff60?, 0xc0000c4000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e090, {0x1014e0680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:40:57 server.go:3413: http: panic serving [::1]:63252: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x10147dfe0?, 0x1017142b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.session({0xc000061b08?, 0x100f0eb7b?}, 0xc0000ac360)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/server.go:23 +0x7e
+todo_app/app/controllers.top({0x1014dff60, 0xc0000c41c0}, 0xc0000ac360)
+	/Users/furuyamakana/GolandProjects/todo_app/app/controllers/route_main.go:8 +0x2c
+net/http.HandlerFunc.ServeHTTP(0x10175e460?, {0x1014dff60?, 0xc0000c41c0?}, 0x1011a38fa?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100f66839?, {0x1014dff60, 0xc0000c41c0}, 0xc0000ac360)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00009e2a0?}, {0x1014dff60?, 0xc0000c41c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000ae120, {0x1014e0680, 0xc00010b440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/09/14 12:52:31 route_auth.go:81: sql: no rows in result set
+2024/09/14 12:52:31 server.go:3413: http: superfluous response.WriteHeader call from todo_app/app/controllers.authenticate (route_auth.go:97)
